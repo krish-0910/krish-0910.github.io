@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
+#ftrhead{
+    font-family: 'Dongle', sans-serif;
+    color: whitesmoke;
+    font-weight: 1000;}
+
+.ftr{
+        background-color: #FFC898;   
+       }
+
+#ftrlogos{
+        display: inline-block;
+        margin-left:45% ;
+        margin-right:40%;
+        
+}
+
+.ftrinline{
+    display: inline;
+}
+.ftrtxtcenter{
+    text-align: center;
+}
+
+#head{
+    background-color: #F9F3DF;
+    border: solid 2px black ;
+    border-radius: 25px;
+    width: 100%;
+    height: 150px;
+}
+
+#dp{
+    display: inline;
+    margin-right: 0% ;
+    border: solid black 2px; 
+    margin-left: 90%;
+    margin-bottom: 10%; 
+    margin-top: 30%;
+    border-radius: 10px;
+    padding: 10px black;
+}
+
+.inline{
+    display: inline;
+    
+}
+
+#username{
+    display: inline;
+    margin-left: 78%;
+    font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+#logo{
+    margin-right: 90%;
+}
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	background: #CDF2CA;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.shape-blob {
+	background:#FF00E4;
+	height: 200px;
+	width: 200px;
+	border-radius: 30% 50% 20% 40%;
+  	animation: 
+		transform 20s ease-in-out infinite both alternate,
+		movement_one 40s ease-in-out infinite both;
+	opacity:.7;
+	position: absolute;
+	left: 70%;
+	top: 50%;
+}
+.shape-blob.one{
+	height: 500px;
+	width: 500px;
+	left: -200px;
+	top: -150px;
+	transform: rotate(-180deg);
+	animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
+}
+
+.shape-blob.two{
+	height: 350px;
+	width: 350px;
+	left: 500px;
+	top: -150px;
+	transform: rotate(-180deg);
+	animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
+}
+
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+}
+
+
+@keyframes movement_one
+{
+    0%,
+  100% { transform: none; }
+   50% { transform: translate(50%, 20%) rotateY(10deg) scale(1.2); }
+}
+
+@keyframes movement_two
+{
+    0%,
+  500% { transform: none; }
+   50% { transform: translate(50%, 20%) rotate(-200deg) scale(1.2);}
+}
+
+#txtbox1{
+    display: inline-block;
+ width: 500px;
+ height: 400px;
+ background-color: #FFC898;
+ opacity: 0,9 ;
+ padding: 20px;
+ border-radius: 25px;
+ margin-left:auto;
+ margin-right: auto;
+}
+
+#tb1h
+{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    color: #310B0B;
+}
+
+#tb1p{
+    color: #310B0B;
+    font-family: 'Pacifico', cursive;
+}
+
+#txtboximg{
+    display: inline-block;
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#img2{
+    display: inline-block;
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tb2h
+{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    color: #310B0B;
+}
+
+#tb2p{
+    color: #310B0B;
+    font-family: 'Pacifico', cursive;
+}
+
+#txtbox2{
+    display: inline-block;
+ width: 500px;
+ height: 400px;
+ background-color: #FFC898;
+ opacity: 0,9 ;
+ padding: 20px;
+ border-radius: 25px;
+ margin-left:auto;
+ margin-right: auto;
+}
+
+table {
+    border: solid 2px black;
+    width: 1200px;
+    padding: 15px;
+    background-color:#C56824 ;
+    margin-left: 40px ;
+    border-radius: 25px;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+
+  tr:nth-child(even){background-color: #CFB784; font-family: 'Righteous', cursive; }
+  tr:nth-child(odd){background-color: #EADEB8; font-family: 'Righteous', cursive;  }
+  th {
+    background-color: #C56824;
+    color: white;
+    font-family: 'Noto Serif Display', serif;
+  }  
+
+  tr:hover {background-color:#ffffff;}
+  #tabspace{background-color:#CDF2CA;}
+  #body{background-color:#CDF2CA;}
+  #ftrpra{ font-family: 'Righteous', cursive; }
+  #share{ font-family: 'Open Sans Condensed', sans-serif; }
