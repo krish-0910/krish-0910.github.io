@@ -1,0 +1,85 @@
+.inline{
+    display: inline;
+}
+
+.txtcenter{
+    text-align: center;
+}
+.divinline{
+    display: inline-block;
+    margin: 1%;
+}
+
+.center {
+    display: block;
+    margin-left: 5%;
+    margin-right: auto;
+   }
+
+.wallcenter {
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+   }   
+.imgcenter{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ftrlogos{
+    display: inline-block;
+    margin-left:45% ;
+    margin-right:40%;
+    
+}
+.ftr{
+ background-color: black;   
+}
+
+#ftrhead{
+    font-family: 'Dongle', sans-serif;
+    color: whitesmoke;
+    font-weight: 1000;
+}
+.heading{
+    font-family: 'Mohave', sans-serif;
+    color: black;
+}
+.subheadings{
+    font-family: 'Lobster Two', cursive;
+    color: black;
+}
+
+
+#login{
+    float: right;
+    display: block;
+    margin-left: auto;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+#headdiv{
+    float: left;
+}
+
+#homebody{
+    background-image: url(../back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+#capback{
+    background-image: url(../back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+#video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    width:fit-content;
+}
