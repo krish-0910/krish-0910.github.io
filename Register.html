@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width intial scale=1.0" >
+        <link rel="stylesheet" href="9-Nov.css">
+        <link rel = "icon" href ="weblogo.png" type = "image/x-icon">
+
+        <title>
+            Registration 
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&display=swap" rel="stylesheet">
+
+       
+
+    </head>
+
+    
+    <body class="rainbow">
+        <div class="regbox1" id="leftdiv" >
+            
+                <h2 id="fname" class="label" >First Name</h2>
+                <input type="text" id="fname" name="fname" placeholder="KRISH">
+                <h2 id="tel" class="label" >Mobile Number</h2>
+                <input type="text" id="lname" name="lname" placeholder="10-digit-mobile-number" pattern="[0-9]{10}" min="6000000000" max="9999999999" >
+                <h2 class="label" >  e-mail  </h2>
+                <input type="email" name="email" placeholder="email">
+                
+               
+        </div>
+        
+        <div id="rightdiv" class="regbox2" >
+
+            <h2 class="label" >  Password </h2>
+                <input type="password" name="password" placeholder="Uppercase,lowercase,symbol,number" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" >
+                <h2 class="label" > Retype your Password  </h2>
+                <input type="password" name="repassword" placeholder="Passwords should match" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" >
+                <h2 class="label" >  Identity Number </h2>
+                <input type="checkbox" name="idproof1" checked>
+                <label for="idproof1" class="checkbox" > PAN CARD </label><br>
+                <input type="checkbox" name="idproof2" >
+                <label for="idproof2" class="checkbox" > PASSPORT </label><br>
+        </div>
+       <br><br> 
+        
+            <button type="submit" id="submit" class="box" > SUBMIT  </button>
+            <br>
+            <button type="reset" id="reset" class="box" > RESET </button> 
+        
+
+    </body>
+
+
+</html>
