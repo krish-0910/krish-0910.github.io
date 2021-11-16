@@ -1,0 +1,146 @@
+#ftrhead{
+    font-family: 'Dongle', sans-serif;
+    color: whitesmoke;
+    font-weight: 1000;
+ }
+
+.ftr{
+    background-color:#142850;  
+    padding: 10px; 
+}
+
+#ftrlogos{
+    display: inline-block;
+    margin-left:45% ;
+    margin-right:40%;
+
+}
+
+.ftrinline{
+display: inline;
+}
+.ftrtxtcenter{
+    text-align: center;
+}   
+
+nav{
+    width: 100%; height: 15vh;
+    background: #27496D;
+    color: white; display: flex; justify-content: space-between;
+    align-items: center; text-transform: uppercase;
+}
+
+nav .logo{
+        width: 25%; text-align: center;
+}
+
+nav .menu{
+    width: 40%; 
+    display: flex; justify-content: space-around;
+}
+
+nav .menu a {
+    width: 25%;
+    text-decoration: none; color: white;
+    font-weight: bold;
+    }
+
+nav .menu a:first-child{
+            color: #181D31;
+        }
+
+#title {
+    font-family: 'Josefin Slab', serif;
+    font-size: 50px;
+}
+
+#author {
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+}
+
+.str{
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 15px;
+    text-align: left;
+    color: black;
+}
+
+.itl{
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+#preface{
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 25px;
+}
+
+#page{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #DAE1E7;
+    padding: 30px ;
+    border-radius: 30px;
+}
+
+
+
+#backbtn{
+    float: left;
+    text-align: center;
+    
+    width: 45%;
+    font-size: 100px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#nxtbtn{
+    float: right;
+    text-align: center;
+   
+    width: 45%;
+    font-size: 100px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(bookback.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.txtleft{
+    display: inline;
+    float: left;
+    font-family: 'Spinnaker', sans-serif;
+}
+
+.txtright{
+    display: inline;
+    float: right;
+    font-family: 'Spinnaker', sans-serif;
+}
+
+.chptrheads{
+    font-size: 25px;
+    font-family: 'Josefin Slab', serif;
+}
+
+p::first-letter{
+    color: red;
+    font-size: 20px;
+    font-family: 'Spinnaker', sans-serif;
+}
+
+.enlarge:hover {
+    font-size: 150px;
+    color: rgb(255, 0,0);
+    text-decoration: none;
+    
+}
