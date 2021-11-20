@@ -1,0 +1,28 @@
+.full{
+    height: 0px;
+    width: 0px;
+    border-top: solid 00px transparent;
+    border-bottom: solid 200px #ffeecf;
+    border-left: solid 200px transparent;
+    border-right: solid 200px transparent;
+}
+.half{
+    height: 00px;
+    width: 150px;
+    border-top: solid 0px transparent;
+    border-bottom: solid 100px #00a79d;
+    border-left: solid 125px transparent;
+    border-right: solid 125px transparent;  
+}
+#mid{
+    border-bottom: solid 100px #f5c881;    
+}
+
+body{
+background-color: #007065;
+}
+
+.center{
+    margin-left: 30%;
+    margin-right: 30%;
+}

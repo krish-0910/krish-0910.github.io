@@ -1,0 +1,16 @@
+div{
+    height: 00px;
+    width: 0px;
+    border-left: solid 150px #51b5a9;
+    border-right: solid 150px transparent;
+    border-bottom: solid 150px #f7F3d7;
+    border-top: solid 150px #fade8b;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    margin-top: 150px;
+    margin-left: 450px;
+}
+
+body{
+    background-color: #e3516e;
+}
