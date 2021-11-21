@@ -1,0 +1,68 @@
+.dropbtn {
+    background-color: #FF9642;
+    display: block;
+    color: whitesmoke;
+    width: 1200px;
+    height: 50px;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 05px;
+    
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+#body{
+    background-color: #FFE05D;
+}  
+
+table {
+    border: solid 2px black;
+    width: 1200px;
+    padding: 15px;
+    background-color:#47D0BD ;
+    margin-left: 40px ;
+    border-radius: 25px;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+
+  tr:nth-child(even){background-color: #DAEC8B; font-family: 'Righteous', cursive; }
+  tr:nth-child(odd){background-color: #FFFDD6; font-family: 'Righteous', cursive;  }
+  th {
+    background-color: #47D0BD;
+    color: white;
+    font-family: 'Noto Serif Display', serif;
+  }  
+
+  td:hover {background-color:#ffffff;}
+  th:hover {background-color:#FF5DA2;}
+
