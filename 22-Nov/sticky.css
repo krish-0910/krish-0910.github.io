@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+}
+
+#bdy{
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+body{
+    background-color: #99DDCC;
+}
+
+
+header{
+    background-color: #000D6B;
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+
+}
+#hleft{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#hright{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid white; */
+}
+#hright > h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    background-color: #F4DFD0;
+    padding: 5px;
+    border: 2px solid black;
+    height: 60px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+#hright > img {
+    border-radius: 50%;
+    border: solid 2px black;
+}
+
+
+#hleft > h1{
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border: 2px solid black;
+    /* width: 1200px; */
+}
+
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: #9C19E0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px;
+}
+nav > a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    color: whitesmoke;
+    padding: 20px; 
+    text-decoration: none;
+}
+
+nav > a:hover {
+    background-color: black;
+}
+
+#ch1{
+    background-color: #FF5DA2;
+    position: sticky;
+    top: 70px;
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    font-family: 'Arima Madurai', cursive;
+    color: whitesmoke;
+    text-align: center;
+    /* border: 2px solid black;
+    border-radius: 25px; */
+}
+#ch2{
+    background-color: #FF5DA2;
+    position: sticky;
+    top: 120px;
+    height: 50px;
+    font-size: 30px;
+    font-family: 'Arima Madurai', cursive;
+    color: whitesmoke;
+    text-align: center;
+    /* border: 2px solid black;
+    border-radius: 25px; */
+}
+
+
+
+
+
+#ftrhead{
+        font-family: 'Dongle', sans-serif;
+        color: whitesmoke;
+        font-weight: 1000;
+}
+
+.ftr{
+        background-color: black;   
+}
+
+#ftrlogos{
+        display: inline-block;
+        margin-left:45% ;
+        margin-right:40%;
+        
+}
+
+.ftrinline{
+        display: inline;
+}
+.ftrtxtcenter{
+        text-align: center;
+}   
+    
