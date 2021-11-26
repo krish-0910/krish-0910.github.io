@@ -1,0 +1,27 @@
+
+         #ftrhead{
+            font-family: 'Dongle', sans-serif;
+            color: whitesmoke;
+            font-weight: 1000;
+         }
+
+        .ftr{
+            background-color: black;   
+        }
+
+        #ftrlogos{
+            display: inline-block;
+            margin-left:45% ;
+            margin-right:40%;
+        
+        }
+
+        .ftrinline{
+        display: inline;
+        }
+        .ftrtxtcenter{
+            text-align: center;
+        }
+        
+ 
+        
