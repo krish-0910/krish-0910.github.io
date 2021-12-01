@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Function again</h2>
+    <script>
+        // function sum(a, b) {
+        //     let total = a + b;
+        //     return total;
+        // }
+
+        // var addition = sum(10, 20);
+        // console.log(addition);
+
+
+        // var sum = function (a, b) {
+        //     let total = a + b;
+        //     return total;
+        // }
+
+        // var addition = sum(10, 20);
+        // console.log(addition);
+
+
+        // var sumation = function (a, b) {
+        //     let total = a + b;
+        //     return total;
+        // }
+
+        // var calculator = {
+        //     'mul': "",
+        //     'div': "",
+        //     'sum': sumation,
+        //     'diff': "",
+        // }
+
+        // var addition_of_numbers = calculator.sum(10, 20);
+        // console.log(addition_of_numbers);
+
+
+        var calculator = {
+            'mul': function (a, b) {
+                let product = a * b;
+                return product;
+            },
+            'div': "",
+            'sum': function (a, b) {
+                let total = a + b;
+                return total;
+            },
+            'diff': "",
+        }
+
+        var addition_of_numbers = calculator.sum(10, 20);
+        var multiplication_of_number = calculator.mul(4, 6);
+
+        console.log(addition_of_numbers);
+        console.log(multiplication_of_number);
+    </script>
+</body>
+</html>
