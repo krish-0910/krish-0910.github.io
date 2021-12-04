@@ -1,20 +1,30 @@
-var evaluation = function (e){
-    if(e=="A"||"a"){
+var evaluation = function (rep){
+    if(rep=="A"){
         console.log("Correct Answer");
+        return true;
+    }
+    else if(rep=="a"){
+        console.log("Correct Answer");
+        return true;
     }
     else{
         console.log("Wrong Answer");
-        brk();
+        return false;
     }
 }
 
-var btrue = function (b){
-    if(b== "B"||"b"){
+var btrue = function (rey){
+    if(rey== "B"){
         console.log("Correct Answer");
+        return true;
+    }
+    else if(rey== "b"){
+        console.log("Correct Answer");
+        return true;
     }
     else{
         console.log("Wrong answer");
-        brk();
+        return false;
     }
 }
 
@@ -42,23 +52,26 @@ var question = function(ques){
         evaluation(a);
     }
     if(ques==6){
-        var a = window.prompt("Congratulations! you've sucessfully completed current question sequence");
+        var a = window.prompt("Congratulations! You've sucessfully completed current question sequence");
     }
 }
 
 var nm = window.prompt("Provide your name to proceed further");
 
 var i = " ";
+var a = " ";
 
-// var brk = " ";
-var brk = function(brek){
-    break ;
-}
+
 
 loop1:
 for(i=1; i<=6; i++){
-    // i= ques;
+    i= ques;
     question(i); 
+    if(a==false){
+        alert("Wrong Answer");
+        console.log("Wrong answer, You are disqualified for the next round ");
+        break;
+    }
 }
 
 var prize = (i-1)*100;
