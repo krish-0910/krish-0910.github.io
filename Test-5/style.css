@@ -1,0 +1,31 @@
+body{
+    background-color: #FEE3EC;
+    display: flex;
+    /* justify-content: center; */
+    /* justify-items: center; */
+    justify-self: center;
+}
+div{
+    display: block;
+    align-items: center;
+    width: 100%;
+    /* margin-left: 30%; */
+}
+
+h2{
+    display: block;
+    text-align: center;
+    text-decoration: solid underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #C84B31;
+}
+button{
+    height: 70px;
+    width: 200px;
+    margin-left: 100px;
+    font-size: 20px;
+    border: black solid 2px;
+    background-color: #ECDBBA;
+    border-radius: 25px;
+}
