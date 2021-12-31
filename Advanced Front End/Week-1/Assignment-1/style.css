@@ -1,14 +1,22 @@
-img{
+#disp{
     border-radius: 50%;
     border: solid 5px #000957;
 }
-
+/* *{
+    margin: 05px;
+} */
 header{
     display: flex;
     justify-content: space-around;
     width: 100%vw;
     text-align: center;
+    color: #fff;
     font-size: 2rem;
+    background-color: #1C6DD0;
+}
+#about{
+    padding: 5px;
+    
 }
 #lang{
     width: 49%;
@@ -42,9 +50,39 @@ li{
     font-family: 'Alegreya Sans', sans-serif;
 }
 a{
-    text-decoration: none;
-    color: #FE7E6D;
+    text-decoration: underline;
+    
+    color: #461111;
 }
 h1{
     font-family: 'Titillium Web', sans-serif; 
 }
+
+body{
+    /* background-color: #EED7CE; */
+    background-color: #1C6DD0;
+    /* margin: 0%; */
+}
+
+h2{
+    color: #FF87CA;
+}
+h3{
+    color: #FF87CA;
+}
+p{
+    color: #4C0070;
+}
+li{
+    color: #4C0070;  
+}
+#con> ul{
+    list-style: none;
+}
+div{
+    background-color: #EED7CE;
+}
+header > h1{
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
