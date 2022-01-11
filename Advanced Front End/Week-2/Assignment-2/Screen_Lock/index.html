@@ -1,32 +1,24 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+  <title> Lock Screen </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="keyboard/Keyboard.css">
+ 
+</head>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="viewport" content="width=device-width intial scale=1.0" >
-        <link rel="stylesheet" href="style.css">
-        <link rel = "icon" href ="../../logo.png" type = "image/x-icon">
+<body>
+  <h3> 4 Digit Pin pattern </h3> <br>
+  <label for="passcode"> <h1>Enter your pin</h1> <br> <span><strong>NOTE : Pin = 1234</strong> </span> </label> <br>
+  <input name="passcode" class="use-keyboard-input" maxlength="4"  type="password" id="inpt"></input>
+  <br><br>
+  <button id="btn1" class="btns" type="submit" onclick="passon()"> Submit </button> <br> <br>
+  <button id="btn2" class="btns" type="reset" onclick="reset()"> Reset </button>
+  <script src="script.js"></script>
 
-        <title>
-           Screen Lock Pattern
-        </title>
-        
-
-        
-       
-
-    </head>
-
-    
-    <body>
-      <div class="pin-login" id="mainPinLogin">
-        <input type="password" readonly class="pin-login__text">
-        <div class="pin-login__numpad">
-        </div>
-    </div>
-        <script src="script.js"></script>  
-    </body>
-
+</body>
 
 </html>

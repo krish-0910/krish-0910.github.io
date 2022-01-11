@@ -1,87 +1,156 @@
-class PinLogin {
-  constructor ({el, loginEndpoint, redirectTo, maxNumbers = Infinity}) {
-      this.el = {
-          main: el,
-          numPad: el.querySelector(".pin-login__numpad"),
-          textDisplay: el.querySelector(".pin-login__text")
-      };
+const Keyboard = {
+    elements: {
+        main: null,
+        keysContainer: null,
+        keys: []
+    },
 
-      this.loginEndpoint = loginEndpoint;
-      this.redirectTo = redirectTo;
-      this.maxNumbers = maxNumbers;
-      this.value = "";
+    eventHandlers: {
+        oninput: null,
+        onclose: null
+    },
 
-      this._generatePad();
-  }
+    properties: {
+        value: "",
+        capsLock: false
+    },
 
-  _generatePad() {
-      const padLayout = [
-          "1", "2", "3",
-          "4", "5", "6",
-          "7", "8", "9",
-          "backspace", "0", "done"
-      ];
+    init() {
 
-      padLayout.forEach(key => {
-          const insertBreak = key.search(/[369]/) !== -1;
-          const keyEl = document.createElement("div");
+        this.elements.main = document.createElement("div");
+        this.elements.keysContainer = document.createElement("div");
 
-          keyEl.classList.add("pin-login__key");
-          keyEl.classList.toggle("material-icons", isNaN(key));
-          keyEl.textContent = key;
-          keyEl.addEventListener("click", () => { this._handleKeyPress(key) });
-          this.el.numPad.appendChild(keyEl);
 
-          if (insertBreak) {
-              this.el.numPad.appendChild(document.createElement("br"));
-          }
-      });
-  }
+        this.elements.main.classList.add("keyboard");
+        this.elements.keysContainer.classList.add("keyboard__keys");
+        this.elements.keysContainer.appendChild(this._createKeys());
 
-  _handleKeyPress(key) {
-      switch (key) {
-          case "backspace":
-              this.value = this.value.substring(0, this.value.length - 1);
-              break;
-          case "done":
-              this._attemptLogin();
-              break;
-          default:
-              if (this.value.length < this.maxNumbers && !isNaN(key)) {
-                  this.value += key;
-              }
-              break;
-      }
+        this.elements.keys = this.elements.keysContainer.querySelectorAll(".keyboard__key");
 
-      this._updateValueText();
-  }
 
-  _updateValueText() {
-      this.el.textDisplay.value = "_".repeat(this.value.length);
-      this.el.textDisplay.classList.remove("pin-login__text--error");
-  }
+        this.elements.main.appendChild(this.elements.keysContainer);
+        document.body.appendChild(this.elements.main);
 
-  _attemptLogin() {
-      if (this.value.length > 0) {
-          fetch(this.loginEndpoint, {
-              method: "post",
-              headers: {
-                  "Content-Type": "application/x-www-form-urlencoded"
-              },
-              body: `pincode=${this.value}`
-          }).then(response => {
-              if (response.status === 200) {
-                  window.location.href = this.redirectTo;
-              } else {
-                  this.el.textDisplay.classList.add("pin-login__text--error");
-              }
-          })
-      }
-  }
+        document.querySelectorAll(".use-keyboard-input").forEach(element => {
+            element.addEventListener("focus", () => {
+                this.open(element.value, currentValue => {
+                    element.value = currentValue;
+                });
+            });
+        });
+    },
+
+    _createKeys() {
+        const fragment = document.createDocumentFragment();
+        const keyLayout = [
+            "1", "2", "3", 
+            "4", "5", "6", 
+            "7", "8", "9", 
+            "🔙","0", "✔️"
+        ];
+
+        const createIconHTML = (icon_name) => {
+            return `<i class="material-icons">${icon_name}</i>`;
+        };
+
+        keyLayout.forEach(key => {
+            const keyElement = document.createElement("button");
+            const insertLineBreak = ["3", "6", "9", "✔️"].indexOf(key) !== -1;
+
+            keyElement.setAttribute("type", "button");
+            keyElement.classList.add("keyboard__key");
+
+            switch (key) {
+                case "🔙":
+                    
+                    keyElement.innerHTML = createIconHTML("🔙");
+
+                    keyElement.addEventListener("click", () => {
+                        this.properties.value = this.properties.value.substring(0, this.properties.value.length - 1);
+                        this._triggerEvent("oninput");
+                    });
+
+                    break;
+
+                
+
+                    
+
+                
+
+                case "✔️":
+                    
+                    keyElement.innerHTML = createIconHTML("✔️");
+                    keyElement.classList.add("keyboard--hidden");
+                    keyElement.addEventListener("click", () => {
+                        this.close();
+                        this._triggerEvent("onclose");
+                    });
+
+                    break;
+
+                default:
+                    keyElement.textContent = key.toLowerCase();
+
+                    keyElement.addEventListener("click", () => {
+                        this.properties.value += this.properties.capsLock ? key.toUpperCase() : key.toLowerCase();
+                        this._triggerEvent("oninput");
+                    });
+
+                    break;
+            }
+
+            fragment.appendChild(keyElement);
+
+            if (insertLineBreak) {
+                fragment.appendChild(document.createElement("br"));
+            }
+        });
+
+        return fragment;
+    },
+
+    _triggerEvent(handlerName) {
+        if (typeof this.eventHandlers[handlerName] == "function") {
+            this.eventHandlers[handlerName](this.properties.value);
+        }
+    },
+
+    
+    open(initialValue, oninput, onclose) {
+        this.properties.value = initialValue || "";
+        this.eventHandlers.oninput = oninput;
+        this.eventHandlers.onclose = onclose;
+        this.elements.main.classList.remove("keyboard--hidden");
+    },
+
+    close() {
+        this.properties.value = "";
+        this.eventHandlers.oninput = oninput;
+        this.eventHandlers.onclose = onclose;
+        this.elements.main.classList.add("keyboard--hidden");
+    }
+};
+
+window.addEventListener("DOMContentLoaded", function () {
+    Keyboard.init();
+});
+
+const verify =(a)=>{
+    if(a==1234){
+        document.write("You're successfully logged in 😃"+"<br/>");
+        
+    }
+    else{
+        reset();
+        window.alert("Wrong Password");
+    }
 }
 
-new PinLogin({
-  el: document.getElementById("mainPinLogin"),
-  loginEndpoint: "login.php",
-  redirectTo: "dashboard.html"
-});
+const passon =_=>{
+    let b = document.getElementById("inpt").value;
+    verify(b);
+}
+const reset =_=>{
+    document.getElementById("inpt").value=null;
+}
