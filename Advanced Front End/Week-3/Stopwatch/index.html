@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch (Lapsible)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div id="container">
+        
+        <div class="outer">
+            <div class="inner">
+                <span class="text minutes"> </span>
+                <span class="text seconds"> </span>
+                <span class="text milli"> </span>
+            </div>
+        </div>
+        <br>
+        <div id="btn-layout">
+            <button class="btn reset dnone" onclick='reset()' > 🗘 </button>
+            <button class="btn play" onclick='play()'> ▶ </button>
+            <button class="btn lapit dnone" onclick="lap()">Lap </button>
+        </div>
+        <br>
+        <ul class="laps">
+            
+
+            <button class="clrbtn" onclick="clearall()" > Clear all </button>
+        </ul>
+
+    </div>
+        
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

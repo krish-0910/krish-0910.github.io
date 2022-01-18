@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+
+
+*{
+margin: 0px;
+padding: 0%;
+box-sizing: border-box;
+outline: none;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #025955;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer{
+    width: 300px;
+    height: 300px;
+    border-radius: 70px;
+    background-color: #B1D0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.inner{
+    width: 270px;
+    height: 270px;
+    border-radius: 70px;
+    /* border: solid black 5px; */
+    background-color: #7868E6;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.laps{
+    height: 300px;
+    /* width: 300px; */
+    overflow: auto;
+
+}
+.text {
+    color: #E4FBFF;
+    font-size: 20px;
+}
+
+.minutes{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.seconds{
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+}
+.milli{
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-layout{
+    display: flex;
+    justify-items: center;
+    width: 300px;
+    
+}
+
+.btn{
+    height: 70px;
+    width: 70px;
+    border: transparent solid 0px;
+    border-radius: 50%;
+    margin-left: 20px;
+    background-color: #E4FBFF;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.laps {
+    list-style: none;
+    color: #fff;
+    overflow: auto;
+    position: relative;
+    height: 250px;
+    padding: 15px;
+}
+
+.lap{
+    display: block;
+    width: 300px;
+    text-align: center;
+    background-color: #F2A154;
+    height: 30px;
+    font-weight: 900;
+    font-size: 22px;
+    border-bottom: black solid 3px;
+}
+
+.laps::-webkit-scrollbar{
+    display: none;
+}
+
+.sno{
+    color: #ccc;
+}
+
+.timelapped{
+    color: white;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.clrbtn{
+    position: absolute;
+    z-index: 1000;
+    bottom: 50px;
+    /* transform: translate(-50%); */
+    width: 200px;
+    background-color: #F7F6E7;
+    border-radius: 50px;
+    padding: 15px;
+    border: transparent solid 0px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    margin-left: 49px;
+}
+
+.dnone{
+    visibility: hidden;
+}

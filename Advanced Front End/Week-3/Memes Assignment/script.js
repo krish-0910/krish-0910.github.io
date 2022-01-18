@@ -1,5 +1,5 @@
 async function getdata() {
-    var res= await fetch('https://meme-api.herokuapp.com/gimme');
+    var res= await fetch('');
     var data= await res.json();
     
     document.getElementById('view').src=data.preview[0];
