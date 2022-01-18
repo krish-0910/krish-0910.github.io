@@ -154,4 +154,3 @@ const passon =_=>{
 const reset =_=>{
     document.getElementById("inpt").value=null;
 }
-

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Patua+One&display=swap');
+
+body{
+background-color: #FFD39A;    
+
+}
+
+nav{
+    width: 100vw;
+    display: flex;
+}
+
+
+img{
+    margin-left: 10px;
+    height: 80px;
+    width: 100px;
+}
+#signindiv{
+    margin-left: 650px;
+}
+
+.navbtn{
+    height: 70px;
+    width: 150px;
+    /* margin-right: 10px; */
+    margin-left: 30px;
+    margin-top: 10px;
+    background-color: #325288;
+    border-radius: 30px;
+    border: transparent solid 0px;
+    font-family: 'Righteous', cursive;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+#logodiv{
+    display: flex;
+}
+#logodiv > h1 {
+    margin-left: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbtn:hover{
+    background-color: white;
+    color: #325288;
+}
+
+#qdiv{
+    height: 300px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+#qnodiv{
+    height: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'Titillium Web', sans-serif;
+}
+.brdrs{
+    
+    width: 80vw;
+    padding: 5px;
+    background-color: #EEEEEE;
+}
+
+#ques{
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+
+.spacing{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dnone{
+    display: none;
+}
+
+.strtbtn{
+    font-family: 'Patua One', cursive;
+    background-color: #325288;
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
+    border: transparent solid 0px;
+    width: 250px;
+}
+
+.strtbtn:hover{
+    background-color: #EEEEEE;
+    color: #325288;
+    box-shadow: 3px 3px #FFD39A;
+}
+
+.displaytime{
+    font-size: 15px;
+    color: #370665;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#tmr{
+    height: 50px;
+    width: 350px;
+    background-color: #FC9918;
+    display: flex;
+    justify-content: center;
+    font-family: 'Crimson Pro', serif;
+    font-size: 30px;
+    border: solid black 2px;
+    border-radius: 10px
+}
+
+
+.options{
+    width: 40vw;
+    height: 40px;
+    color: #370665;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    border-radius: 10px;
+    border: solid 0px transparent;
+    background-color: #EEEEEE;
+    box-shadow: 3px 3px #370665;
+
+}
+
+.options:hover{
+    background-color: #370665;
+    color: #EEEEEE;
+    box-shadow: 0px 0px #FFD39A;
+}
+

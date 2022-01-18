@@ -101,28 +101,3 @@ input{
 .keyboard__key--dark {
     background: rgba(0, 0, 0, 0.25);
 }
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait){
-
-    body{
-        display: flex;
-        justify-items: center;
-        flex-direction: column;
-        background-color: #FED1EF;
-    }
-    .keyboard {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    padding: 5px 0;
-    background: #FFC900;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-    transition: bottom 0.4s;
-}
-
-  }

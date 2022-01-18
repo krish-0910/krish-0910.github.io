@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylekbc.css">
+    <link rel="shortcut icon" href="eye.png" type="image/x-icon">
+    <title> e-Quiz </title>
+</head>
+<body>
+    <nav>
+        <div class="logodiv" id="logodiv">
+            <img id="logo" src="eye.png" alt="logo" />
+            <h1> e-quiz </h1>
+            
+        </div>
+        <div id="signindiv">
+            <button class="navbtn"> Sign Up </button>
+            <button class="navbtn"> Log in </button>
+        </div>
+
+    </nav>
+    <br>
+    <div class="spacing">
+    <div id="qnodiv" class="brdrs">
+
+        <button onclick="timer()" class="strtbtn" id="strt"> Start test </button>
+          <div id="disptm" class="spacing"> <p id="crnttm" >  </p> </div>
+        <div class="spacing">
+        <p> Question number :&nbsp;&nbsp;&nbsp;</p>
+        <p id="qno">1</p>
+        </div>
+        <div id="tmr"> <span id="spantmr">30</span> </div>
+        
+    </div>
+    </div>
+    <div>
+
+        <div class="spacing">
+        <div id="qdiv" class="brdrs">
+            <h2 id="ques"> Which of the following conditions is Marfan’s syndrome most commonly associated with? </h2>
+        </div>
+        </div>
+        <br> <br>
+        <div class="spacing">
+        <button class="options"> Endocarditis </button>
+        <button class="options"> Arrhythmia </button>
+        </div  >
+        <br>
+        <div class="spacing">
+        <button class="options"> Restrictive Cardiomyopathy </button>
+        <button class="options"> Aortic dissection </button>
+        </div>    
+    </div>
+    
+
+<script src="script.js"> </script>
+</body>
+</html>

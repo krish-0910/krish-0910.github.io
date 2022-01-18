@@ -1,0 +1,42 @@
+.dnone{
+    display: none;
+}
+
+.view{
+    font-size: 10px;
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p{
+    
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.red{
+    color: red;
+}
+
+.green{
+    color: green;
+}
+ul{
+    display: flex;
+    
+}
+
+li{
+    list-style-type: none;
+    display: flex;
+    height: 20px;
+    width: 50px;
+}
+
+li:nth-child(odd){
+    color: green;
+}
+li:nth-child(even){
+    color:red;
+}
+
