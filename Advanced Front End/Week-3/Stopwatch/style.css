@@ -34,7 +34,7 @@ body{
 .inner{
     width: 270px;
     height: 270px;
-    border-radius: 70px;
+    border-radius: 110px;
     /* border: solid black 5px; */
     background-color: #7868E6;   
     display: flex;
@@ -143,4 +143,22 @@ body{
 
 .dnone{
     visibility: hidden;
+}
+
+.gradbg{
+    background: linear-gradient(-45deg,#49FF00,#FBFF00, #FF9300, #FF0000);
+    background-size: 400% 400% ;
+    animation: gradient 7s ease infinite;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0%, 50%;
+    }
+    50%{
+        background-position: 100%, 50%;
+    }
+    100%{
+        background-position: 0%, 50%;
+    }
 }

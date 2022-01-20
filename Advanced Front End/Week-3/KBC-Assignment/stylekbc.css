@@ -67,6 +67,20 @@ img{
     font-weight: 800;
     font-family: 'Titillium Web', sans-serif;
 }
+
+.result {
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:  50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+
 .brdrs{
     
     width: 80vw;
@@ -146,3 +160,26 @@ img{
     box-shadow: 0px 0px #FFD39A;
 }
 
+.true {
+    background-color: #49FF00;
+    color: black;
+    width: 40vw;
+    height: 40px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    border-radius: 10px;
+    border: solid 0px transparent;
+    box-shadow: 3px 3px #370665;
+}
+
+.wrong{
+    background-color: #EC255A;
+    color: #ffffff;
+    width: 40vw;
+    height: 40px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    border-radius: 10px;
+    border: solid 0px transparent;
+    box-shadow: 3px 3px #370665;
+}

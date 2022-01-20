@@ -25,7 +25,7 @@
     <div class="spacing">
     <div id="qnodiv" class="brdrs">
 
-        <button onclick="timer()" class="strtbtn" id="strt"> Start test </button>
+        <button onclick='test()' class="strtbtn" id="strt"> Start test </button>
           <div id="disptm" class="spacing"> <p id="crnttm" >  </p> </div>
         <div class="spacing">
         <p> Question number :&nbsp;&nbsp;&nbsp;</p>
@@ -39,22 +39,27 @@
 
         <div class="spacing">
         <div id="qdiv" class="brdrs">
-            <h2 id="ques"> Which of the following conditions is Marfan’s syndrome most commonly associated with? </h2>
+            <span id="ques"> Which of the following conditions is Marfan’s syndrome most commonly associated with? </span>
         </div>
         </div>
         <br> <br>
         <div class="spacing">
-        <button class="options"> Endocarditis </button>
-        <button class="options"> Arrhythmia </button>
+        <button id="opta" onclick="afn()" class="options"> Endocarditis </button>
+        <button id="optb" onclick="bfn()" class="options"> Arrhythmia </button>
         </div  >
         <br>
         <div class="spacing">
-        <button class="options"> Restrictive Cardiomyopathy </button>
-        <button class="options"> Aortic dissection </button>
+        <button id="optc" onclick="cfn()" class="options"> Restrictive Cardiomyopathy </button>
+        <button id="optd" onclick="dfn()" class="options"> Aortic dissection </button>
         </div>    
+    </div>
+
+    <div id="fdiv" class="dnone">
+        
     </div>
     
 
 <script src="script.js"> </script>
+
 </body>
 </html>
