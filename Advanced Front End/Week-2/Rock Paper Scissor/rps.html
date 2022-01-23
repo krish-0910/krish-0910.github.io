@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissor</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+    <header>
+        Rock-Paper-Scissors
+    </header>
+        <br> <br>
+    <div class="flex gap">
+        <button onclick="rock()">
+            🪨
+        </button>
+        <h1 class="tenvw"> Player</h1> 
+        <h1 class="twevw"> Computer </h1>
+    </div>
+     <br> <br> 
+    <div class="flex gap">
+        <div >
+            <button onclick="paper()">
+            📃
+            </button>
+            
+        </div> 
+        <div  class="block disp" id="plyr" > <p id="para" class="emj"> </p> </div>
+        <div id="comp" class="disp block"> <p id="comppara" class="emj"></p></div>
+    </div>
+    <br> <br>
+    <div class="flex gap">
+        <button onclick="scr()">
+            ✂️
+        </button>
+        <p class="tenvw dnone" id="result"> You won </p>
+        <button class="twevw" id="rematch" onclick="rematch()"> Rematch </button>
+    </div>
+    <br> <br>
+    <div class="flex gap">
+        <p id="pscore" class="tenvw score"> Player score : </p>
+        <p id="cscore" class="twevw score"> Computer Score : </p>
+    </div>
+
+    <script src="rps.js"></script>
+</body>
+</html>

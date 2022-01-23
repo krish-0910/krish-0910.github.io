@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Lato&family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Lato&family=Lobster+Two&family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Lato&family=Lobster+Two&family=Teko&display=swap');
+
+*{
+    margin: 0%;
+}
+
+
+header{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    height: 60px;
+    color: #292C6D;
+    background-color: #FFEBCC;    
+}
+body{
+    background-color: #FFAFAF;
+}
+
+button {
+    background-color: #FBFFE2;
+    width: 100px;
+    
+    height: 100px;
+    font-size: 35px;
+    border-radius: 50%;
+    border: 0px solid transparent;
+    align-items: center;
+}
+
+button:hover{
+    background-color: #91C483;
+    cursor: pointer;
+}
+
+.gap{
+    margin-left: 10%;
+}
+
+.disp{
+    height: 150px;
+    width: 150px;
+    background-color: #FAEDF0;
+    font-size: 50px;
+    margin-left: 10vw;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.emj{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#comp{
+    margin-left: 20vw;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    
+}
+.block{
+    display: block;
+    align-items: center;
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+.tenvw{
+    margin-left: 10vw;
+}
+.twevw{
+    margin-left: 25vw;
+}
+
+#rematch {
+    height: 70px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #FF6464;
+    border: black 2px solid;
+}
+
+#result {
+    font-size: 30px;
+    font-family: 'Lobster Two', cursive;
+    
+}
+
+.dnone{
+    display: none;
+}
+
+.score {
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+    
+}
