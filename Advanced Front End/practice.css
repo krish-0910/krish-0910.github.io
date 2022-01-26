@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan&display=swap');
+
+
+header {
+    height: 800px;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+}
+#intro{
+    text-align: center;
+}
+
+#intro > p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    padding-right: 15vw;
+    padding-left: 15vw;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+}
+#intro > ol{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    padding-right: 15vw;
+    padding-left: 15vw;
+    text-align: left;
+}
+.type{
+    height: 600px;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    align-items: center;
+}
+#typediv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+span{
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    padding-left: 100px;
+    padding-right: 100px ;
+    font-family: 'Allan', cursive;
+    font-weight: 900;
+}
+#conclusion{
+    height: 600px;
+    width: 100vw;
+}
+
+
+input, textarea{
+    height: 60px;
+    width: 30vw;
+    
+}
+
+.form{
+    width: 30vw;
+    background-color: #FFA1C9;
+    opacity: 0.7;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    border: solid transparent 0px;
+    border-bottom: solid black 3px;
+}
+
+#contact_form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.lbl{
+    font-size: 30px;
+    align-items: center;
+}
