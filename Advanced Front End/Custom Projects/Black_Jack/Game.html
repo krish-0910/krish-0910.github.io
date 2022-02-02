@@ -8,18 +8,48 @@
     <link rel="stylesheet" href="Game.css">
 </head>
 <body>
-    
-    
 
+    <div id="carddeck">
+        <button id="hit" class="hitbtn"> Deal Cards </button>
+    </div>
+    <br><br><br>
+    <div id="playarea">
+        <div>
+            <h2>Dealer</h2>
+        <div id="dealer">
+            <img src="null.svg" id="closedcard" class="card" alt="">
+            <img src="null.svg" id="visiblecard" class="card" alt="">
+        </div>
+            <p id="dscore"> _ </p>
+        </div>
+        <div>
+            <h2>Player</h2>
+        <div id="player">
+            <img src="null.svg" id="card1" class="card" alt="">
+            <img src="null.svg" id="card2" class="card" alt="">
+        </div>
+            <P id="pscore"> _ </P>
+        </div>
+    </div>
+    <div id="actionsdiv">
+        <!-- <button class="btn"> Call </button> -->
+        
+    </div>
+    <br>
+    <div id="resultdiv">
+        <p id="result"> _ </p>
 
-
-
-
-
-
-
-
-
+    </div>
+    <br>
+    <div class="btndiv">
+        <p id="pwincount"> _ </p>
+        <br>
+        <p id="dwincount"> _ </p>
+    </div>
+    <br>
+    <div id="restartdiv" class="dnone">
+        <button id="restartbtn" class="btn"> Restart </button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
