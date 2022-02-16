@@ -33,5 +33,9 @@ const calculate =_=>{
     result.innerHTML = `${'Total Gift cost :'+' '+total+'$'}`;
     }
 }
-
+// const enter =(a)=>{
+//     if(a.key==='Enter'){
+//         calculate();
+//     }
 button.addEventListener('click',calculate);
+// button.addEventListener('keypress',enter);
