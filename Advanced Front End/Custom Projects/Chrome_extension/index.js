@@ -1,41 +1,21 @@
 const button = document.querySelector('#btn');
 const input = document.querySelector('#input');
 const list = document.querySelector('#list');
+const inpt = document.getElementById('input');
 let array = [];
 let i = 0;
 
-const save =_=>{
-    array.push(input.value);
-    input.value=null;
-    display();
-}
-const display =_=>{
-    for(i;i<array.length;i++){
-        let line = document.createElement('li');
-        let link = document.createElement('a');
-        let url = array[i];
-        link.href= url;
-        link.target = '_blank';
-        console.log(url);
-        link.textContent = array[i];
-        //line.innerHTML = '<li>'+ array[i]+'</li>';
-        
-        list.append(line);
-        line.append(link);
-        localStorage.setItem(array[i],array[i]);
+const add =_=>{
+    let lines = '';
+    array.push(inpt.value);
+    for(i=0;i<array.length;i++){
+        lines += `<li>
+                    <a target="_blank" href= '${array[i]}'> 
+                        ${array[i]}
+                    </a>    
+                  </li>`;
     }
-    
-}
-const enter =(a)=>{
-    if(a.key==='Enter'){
-        save();
-    }
+    list.innerHTML = lines;
 }
 
-const refesh =_=>{
-    window.location.reload();
-}
-
-document.querySelector('#refresh').addEventListener('click',refesh);
-button.addEventListener('click',save);
-input.addEventListener('keypress',enter);
+button.addEventListener('click',add);

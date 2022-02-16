@@ -1,35 +1,57 @@
-const button = document.querySelector('#btn');
-const input = document.querySelector('#input');
-const list = document.querySelector('#list');
-let array = [];
+/*
+// Below is a sample code to process input from STDIN.
+// Equivalent in effect to the Java declaration import java.io.*;
+importPackage(java.io);
+importPackage(java.lang);
+importPackage(java.math);
+importPackage(java.util);
+
+var sc = new Scanner(System['in']);					// Reading input from STDIN
+
+var my_name = sc.nextLine();
+System.out.println("Hi, " + my_name + ".");			// Writing output to STDOUT
+// End of input processing code.
+
+// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
+*/
+
+// Write your code here
+
+/*
+// Below is a sample code to process input from STDIN.
+// Equivalent in effect to the Java declaration import java.io.*;
+importPackage(java.io);
+importPackage(java.lang);
+importPackage(java.math);
+importPackage(java.util);
+
+var sc = new Scanner(System['in']);					// Reading input from STDIN
+
+var my_name = sc.nextLine();
+System.out.println("Hi, " + my_name + ".");			// Writing output to STDOUT
+// End of input processing code.
+
+// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
+*/
+
+// Write your code here
+
+Array.prototype.min = function(){
+    return Math.min.apply(Math,this);
+}
+
+let set1 = [1,2,22,-21,15,12,16,-5];
+console.log(set1.min());
+let mod = [];
+set1.length=mod.length;
 let i = 0;
+let a;
+let b;
+let c;
+let d;
 
-const save =_=>{
-    array.push(input.value);
-    input.value=null;
-    display();
+const test =(val)=>{
+     if(num > 0){
+        
+     }   
 }
-const display =_=>{
-    for(i;i<array.length;i++){
-        let line = document.createElement('li');
-        let link = document.createElement('a');
-        let url = 'https://'+array[i]
-        link.href= url;
-        link.target = '_blank';
-        console.log(url);
-        link.textContent = array[i];
-        //line.innerHTML = '<li>'+ array[i]+'</li>';
-        list.append(line);
-        line.append(link);
-    }
-    
-}
-const enter =(a)=>{
-    if(a.key==='Enter'){
-        save();
-    }
-}
-
-
-button.addEventListener('click',save);
-input.addEventListener('keypress',enter);
